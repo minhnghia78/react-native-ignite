@@ -14,6 +14,7 @@ export function Transaction() {
 const style = StyleSheet.create({
   container: {
     backgroundColor: "white",
+    height: 325,
     paddingVertical: 20,
     paddingHorizontal: 16,
     gap: 20,
