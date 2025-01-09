@@ -284,14 +284,10 @@ export function Screen(props: ScreenProps) {
 
 const $containerStyle: ViewStyle = {
   flex: 1,
-  height: "100%",
-  width: "100%",
 }
 
 const $outerStyle: ViewStyle = {
   flex: 1,
-  height: "100%",
-  width: "100%",
 }
 
 const $justifyFlexEnd: ViewStyle = {

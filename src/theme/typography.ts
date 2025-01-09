@@ -10,22 +10,27 @@ import {
   SpaceGrotesk_700Bold as spaceGroteskBold,
 } from "@expo-google-fonts/space-grotesk"
 
+import {
+  Nunito_400Regular as nunitoRegular,
+  Nunito_500Medium as nunitoMedium,
+  Nunito_600SemiBold as nunitoSemiBold,
+  Nunito_700Bold as nunitoBold,
+} from "@expo-google-fonts/nunito"
+
 export const customFontsToLoad = {
-  spaceGroteskLight,
-  spaceGroteskRegular,
-  spaceGroteskMedium,
-  spaceGroteskSemiBold,
-  spaceGroteskBold,
+  nunitoRegular,
+  nunitoMedium,
+  nunitoSemiBold,
+  nunitoBold,
 }
 
 const fonts = {
-  spaceGrotesk: {
+  nunito: {
     // Cross-platform Google font.
-    light: "spaceGroteskLight",
-    normal: "spaceGroteskRegular",
-    medium: "spaceGroteskMedium",
-    semiBold: "spaceGroteskSemiBold",
-    bold: "spaceGroteskBold",
+    normal: "nunitoRegular",
+    medium: "nunitoMedium",
+    semiBold: "nunitoSemiBold",
+    bold: "nunitoBold",
   },
   helveticaNeue: {
     // iOS only font.
@@ -59,13 +64,13 @@ export const typography = {
   /**
    * The primary font. Used in most places.
    */
-  primary: fonts.spaceGrotesk,
+  primary: fonts.nunito,
   /**
    * An alternate font used for perhaps titles and stuff.
    */
-  secondary: Platform.select({ ios: fonts.helveticaNeue, android: fonts.sansSerif }),
+  secondary: Platform.select({ ios: fonts.nunito, android: fonts.nunito }),
   /**
    * Lets get fancy with a monospace font!
    */
-  code: Platform.select({ ios: fonts.courier, android: fonts.monospace }),
+  code: Platform.select({ ios: fonts.nunito, android: fonts.nunito }),
 }
