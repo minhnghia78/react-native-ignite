@@ -16,7 +16,7 @@ import { useSafeAreaInsetsStyle } from "@/utils/useSafeAreaInsetsStyle"
 import { useAppTheme } from "@/utils/useAppTheme"
 import { UserInformation } from "@/components/ui/UserInformation"
 import { Transaction } from "@/components/ui/Transaction"
-import { HistoryDetail } from "@/components/ui/HistoryDetail"
+import { GroupTotalAmount } from "@/components/ui/GroupTotalAmount"
 
 export default function WelcomeScreen() {
   const $bottomContainerInsets = useSafeAreaInsetsStyle(["bottom"])
@@ -25,8 +25,8 @@ export default function WelcomeScreen() {
   return (
     <Screen safeAreaEdges={["top"]} statusBarStyle="light">
       <UserInformation />
+      <GroupTotalAmount />
       <Transaction />
-      <HistoryDetail />
     </Screen>
   )
 }

@@ -18,7 +18,7 @@ export interface TextProps extends RNTextProps {
   /**
    * The text to display if not using `tx` or nested components.
    */
-  text?: string
+  text?: string | number
   /**
    * Optional options to pass to i18n. Useful for interpolation
    * as well as explicitly setting locale or translation fallbacks.

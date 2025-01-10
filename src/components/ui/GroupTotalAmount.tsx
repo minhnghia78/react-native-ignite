@@ -2,51 +2,37 @@ import { StyleSheet, View } from "react-native"
 import { Screen } from "../Screen"
 import { Text } from "../Text"
 import { ListItem } from "../ListItem"
+
 import { ListView } from "../ListView"
-import MaterialIcons from "@expo/vector-icons/MaterialIcons"
-import Feather from "@expo/vector-icons/Feather"
 import { Item } from "../Item"
 const DATA = [
   {
-    id: "t1",
-    img: <MaterialIcons name="groups" size={16} />,
-    title: "Mua sắm",
+    id: "g1",
+    img: require("../../../assets/images/avatar.png"),
+    title: "Group 1",
     balance: "123.000đ",
-    amountType: "minus",
-    time: "20/9/24, 10:53",
-    trader: "Tylie, Thảo",
   },
   {
-    id: "t2",
-    img: <MaterialIcons name="groups" size={16} />,
-    title: "Du lịch",
-    balance: "123.000đ",
-    amountType: "minus",
-    time: "20/9/24, 10:53",
-    trader: "Bình,An, Tylie,...",
+    id: "g2",
+    img: require("../../../assets/images/img2.png"),
+    title: "Group 2",
+    balance: "600.000đ",
   },
   {
-    id: "t3",
-    img: <Feather name="type" size={16} />,
-    title: "Cà phê",
+    id: "g3",
+    img: require("../../../assets/images/img4.png"),
+    title: "Group 3",
     balance: "123.000đ",
-    amountType: "minus",
-    time: "20/9/24, 10:53",
-    trader: "Phương, Thảo",
   },
   {
-    id: "t4",
-    img: <MaterialIcons name="groups" size={16} />,
-    title: "Mua sắm",
-    balance: "123.000đ",
-    amountType: "plus",
-    time: "20/9/24, 10:53",
-    trader: "Tylie",
+    id: "g4",
+    img: require("../../../assets/images/img3.png"),
+    title: "Group 4",
+    balance: "600.000đ",
   },
 ]
-const TYPE = "transaction"
-
-export function Transaction() {
+const TYPE = "group"
+export function GroupTotalAmount() {
   return (
     <View style={style.container}>
       <ListItem
